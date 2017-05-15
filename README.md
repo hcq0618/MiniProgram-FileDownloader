@@ -1,7 +1,8 @@
 # WeChatApp-FileDownloader
-a download file lib for wechat app
+A download file lib for wechat app
 
 1.fetch file cache if file cache existed, or else download file
+
 2.use ES6
 
 For Example:
