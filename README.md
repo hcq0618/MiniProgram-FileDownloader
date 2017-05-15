@@ -1,7 +1,30 @@
 # WeChatApp-FileDownloader
 a download file lib for wechat app
 
-1.fetch file cache if file cache existed,or else download file
+1.fetch file cache if file cache existed, or else download file
+2.use ES6
+
+For Example:
+
+  import { FileDownloader } from "file_downloader"
+  //or use require if u want
+  
+  wx.showLoading({
+      title: 'loading...',
+    });
+
+  let fileDownloader = new FileDownloader(url, fileCacheKey);
+  //or use var if u want
+  
+  fileDownloader.fetch({
+        success: function (data) {
+          wx.hideLoading();
+        },
+        fail: function () {
+          wx.hideLoading();
+        }
+      });
+
 
 ## License
 MIT License
