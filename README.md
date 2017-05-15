@@ -18,7 +18,7 @@ let fileDownloader = new FileDownloader(url, fileCacheKey);
 //or use var if u want
 
 fileDownloader.fetch({
-    success: function (data) {
+    success: function (filePath) {
       wx.hideLoading();
     },
     fail: function () {
