@@ -7,23 +7,23 @@ a download file lib for wechat app
 For Example:
 ```
 import { FileDownloader } from "file_downloader"
-  //or use require if u want
+//or use require if u want
 
-  wx.showLoading({
-      title: 'loading...',
-    });
+wx.showLoading({
+  title: 'loading...',
+});
 
-  let fileDownloader = new FileDownloader(url, fileCacheKey);
-  //or use var if u want
+let fileDownloader = new FileDownloader(url, fileCacheKey);
+//or use var if u want
 
-  fileDownloader.fetch({
-        success: function (data) {
-          wx.hideLoading();
-        },
-        fail: function () {
-          wx.hideLoading();
-        }
-      });
+fileDownloader.fetch({
+    success: function (data) {
+      wx.hideLoading();
+    },
+    fail: function () {
+      wx.hideLoading();
+    }
+  });
 ```
 
 
