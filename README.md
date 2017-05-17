@@ -1,9 +1,11 @@
 # WeChatApp-FileDownloader
 A download file lib for wechat app
 
-1.fetch file cache if file cache existed, or else download file
+1.fetch file cache if file cache existed , or else download file
 
 2.use ES6
+
+3.use LRU disc cache strategy , if disc cache space larger than 8M , will free 40% space
 
 For Example:
 ```
@@ -17,6 +19,7 @@ wx.showLoading({
 let fileDownloader = new FileDownloader(url, fileCacheKey);
 //or use var if u want
 
+//fetch file cache if file cache existed, or else download file
 fileDownloader.fetch({
     success: function (filePath) {
       wx.hideLoading();
@@ -25,6 +28,10 @@ fileDownloader.fetch({
       wx.hideLoading();
     }
   });
+
+//remove file caches
+fileDownloader.removeCaches();
+
 ```
 
 
