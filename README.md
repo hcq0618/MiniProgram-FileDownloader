@@ -8,7 +8,7 @@ A download file lib for wechat app
 3.use LRU disc cache strategy , if disc cache space larger than 8M , will free 40% space
 
 For Example:
-```
+```javascript
 import { FileDownloader } from "file_downloader"
 //or use require if u want
 
