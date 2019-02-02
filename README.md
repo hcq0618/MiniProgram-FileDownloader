@@ -16,11 +16,11 @@ wx.showLoading({
   title: 'loading...',
 });
 
-let fileDownloader = new FileDownloader(url, fileCacheKey);
+let fileDownloader = new FileDownloader(fileCacheKey);
 //or use var if u want
 
 //fetch file cache if file cache existed, or else download file
-fileDownloader.fetch({
+fileDownloader.fetch(url, {
     success: function (filePath) {
       wx.hideLoading();
     },
