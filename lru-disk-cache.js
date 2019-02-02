@@ -1,4 +1,4 @@
-const disc_cache_key_prefix = "FileDownloader-";
+const disc_cache_key_prefix = "file-down-loader-";
 
 //LRU磁盘缓存策略
 export class LRUDiscCache {

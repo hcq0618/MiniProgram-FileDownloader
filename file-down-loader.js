@@ -1,6 +1,6 @@
 import {
   LRUDiscCache
-} from "lru_disk_cache"
+} from "lru-disk-cache"
 
 export class FileDownloader {
 
