@@ -1,4 +1,4 @@
-# WeChatApp-FileDownloader
+# WeChatMiniProgram-FileDownloader
 A download file lib for wechat mini program
 
 1.fetch file cache if file cache existed , or else download file
@@ -9,7 +9,7 @@ A download file lib for wechat mini program
 
 For Example:
 ```javascript
-import { FileDownloader } from "file_downloader"
+import { FileDownloader } from "file-downloader"
 //or use require if u want
 
 wx.showLoading({
