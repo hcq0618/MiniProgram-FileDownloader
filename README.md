@@ -1,4 +1,4 @@
-# WeChatMiniProgram-FileDownloader
+# MiniProgram-FileDownloader
 A download file lib for wechat mini program
 
 1.fetch file cache if file cache existed , or else download file
